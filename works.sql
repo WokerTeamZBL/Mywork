@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50717
 File Encoding         : 65001
 
-Date: 2017-04-30 20:22:31
+Date: 2017-04-30 20:54:42
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -20,11 +20,13 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `books`;
 CREATE TABLE `books` (
+  `reader` varchar(255) DEFAULT NULL,
   `id` int(255) NOT NULL AUTO_INCREMENT,
   `author` varchar(255) DEFAULT NULL,
   `status` int(10) DEFAULT NULL,
   `borrowdate` date DEFAULT NULL,
   `backdate` date DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
