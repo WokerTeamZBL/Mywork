@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.devMode" value="true"></constant>
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="hello">
+			<result>/index.jsp</result>
+		</action>
+		 <action name="Login" class="Login.Login" method="Login">
+			<result name="success">/main/main.jsp</result>
+			<result name="input">/Login/Login.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="queryall" class="action.query" method="queryall">
+			<result name="success">/query/query.jsp</result>
+		</action>
+	</package>
+</struts>    
