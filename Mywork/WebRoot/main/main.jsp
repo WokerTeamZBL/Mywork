@@ -37,6 +37,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			case 5:
 			
 			break;
+			case 6:
+				window.location.href="exit";
+			break;
 		}
 	}
 </script>
@@ -45,8 +48,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
   <div class="top">
-  	<span>你好</span>
-  	<input type="button" value="退出">
+  	<span>你好<%=session.getAttribute("name") %></span>
+  	<input type="button" onclick="chose(6)" value="退出">
   </div>
   <div class="function">
   	<ul>

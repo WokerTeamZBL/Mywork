@@ -3,16 +3,23 @@
 <struts>
 <constant name="struts.devMode" value="true"></constant>
 	<package name="default" namespace="/" extends="struts-default">
-		<action name="hello">
-			<result>/index.jsp</result>
-		</action>
-		 <action name="Login" class="Login.Login" method="Login">
-			<result name="success">/main/main.jsp</result>
-			<result name="input">/Login/Login.jsp</result>
+	<action name="hello">
+		<result>/index.jsp</result>
+	</action>
+	<action name="Login" class="Login.Login" method="Login">
+		<result name="success">/main/main.jsp</result>
+		<result name="input">/Login/Login.jsp</result>
+		<result name="error">/error.jsp</result>
+	</action>
+	<action name="queryall" class="action.query" method="queryall">
+		<result name="success">/query/query.jsp</result>
+	</action>
+		
+		<!-- 退出 -->
+		<action name="exit" class="action.exit" method="exit">
+			<result name="success">/Login/Login.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
-		<action name="queryall" class="action.query" method="queryall">
-			<result name="success">/query/query.jsp</result>
-		</action>
+		
 	</package>
 </struts>    
