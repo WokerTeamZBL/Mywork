@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+.datatable{
+	width:100%;
+}
+.datatable tr td{
+	width:16%;
+}
+.datatable tr{
+	
+	height:20px;
+}
