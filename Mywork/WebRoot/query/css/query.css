@@ -3,7 +3,8 @@
 	width:100%;
 }
 .datatable tr td{
-	width:16%;
+	width:14%;
+	text-align: center;
 }
 .datatable tr{
 	
