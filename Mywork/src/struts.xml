@@ -20,6 +20,11 @@
 			<result name="success">/Login/Login.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
+			<!-- 查询全部图书 -->
+		<action name="query" class="">
+			<result name="result">/query/query.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
 		
 	</package>
 </struts>    
